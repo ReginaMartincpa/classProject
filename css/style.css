@@ -7,7 +7,8 @@
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: rgba (255, 255, 255, 1);
-	margin: 0;
+    margin: 0;
+    font-size: 1.35em;
 }
 
 p {
@@ -21,7 +22,7 @@ p {
 h1 {
     display: block;
     text-align: center;
-    font-size: 2em;
+    font-size: 8em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -37,3 +38,14 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media
+    (min-width: 600px){
+        .col {flex-basis: initial;}
+        display:flex
+        flex-wrap:wrap
+    }
