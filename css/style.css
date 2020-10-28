@@ -3,6 +3,13 @@
 * {
 	box-sizing: border-box;
 }
+
+.figure{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
 .title {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
@@ -43,6 +50,13 @@ h1 {
     background-color: purple;
 }
 
+h2 {
+	padding: 10px;
+	background-color:lightsalmon;
+  border-radius: 5px;
+	margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
 p {
     display: block;
     margin-block-start: 1em;
@@ -62,8 +76,11 @@ figure {
 ==================================== */
 
 @media
-    (min-width: 600px){
-        .col {flex-basis: initial;}
-        display:flex
-        flex-wrap:wrap
+    (min-width: 600px) {
+        .container{
+        display:flex;
+        width: 70%;
+        max-width: 100%;
+        flex-wrap:wrap;
+        }
     }
